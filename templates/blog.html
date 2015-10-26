@@ -1,0 +1,26 @@
+<!DOCTYPE = html>
+<html>
+	<head>
+		<title>Darren's Blog: Blog Homepage</title>
+		<h1>Darren's Blog</h1>
+	</head>
+
+	<body>
+		<hr>
+		{% for entry in entries %}
+			<div class="entry">
+				<div class="entry-subject">{{entry.subject}}" " {{entry.key().id()}}</div>
+				<div class="entry-content">{{entry.content}}</div>
+			</div>
+			<br><br>
+		{% endfor %}
+
+		<div>
+			<h5> queried {{seconds}} seconds ago
+			</h5>
+		</div>
+
+	</body>
+	
+
+</html>
