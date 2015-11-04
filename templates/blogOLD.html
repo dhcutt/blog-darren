@@ -1,0 +1,34 @@
+<!DOCTYPE = html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Darren's Blog: Blog Homepage</title>
+		<link href="css/style.css" rel="stylesheet">
+	</head>
+
+	<body>
+		<div>
+			<a href="/blog">
+				<h1>Darren's Blog</h1>
+			</a>
+			<hr>
+			{% for entry in entries %}
+				<div class="entry">
+					<p class="entry-subject">{{entry.subject}} 
+						<a class="entry-id" href="/blog/{{entry.key().id()}}">id = {{entry.key().id()}}</a>
+					</p>
+					<p class="entry-content">{{entry.content}}</p>
+				</div>
+				<br><br>
+			{% endfor %}
+
+			<div>
+				<h5> queried {{seconds}} seconds ago
+				</h5>
+			</div>
+		</div>
+
+	</body>
+	
+
+</html>

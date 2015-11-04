@@ -1,26 +1,30 @@
-<!DOCTYPE = html>
-<html>
-	<head>
-		<title>Darren's Blog: Blog Homepage</title>
-		<h1>Darren's Blog</h1>
-	</head>
-
-	<body>
-		<hr>
-		{% for entry in entries %}
-			<div class="entry">
-				<div class="entry-subject">{{entry.subject}}" " {{entry.key().id()}}</div>
-				<div class="entry-content">{{entry.content}}</div>
-			</div>
-			<br><br>
-		{% endfor %}
-
-		<div>
-			<h5> queried {{seconds}} seconds ago
-			</h5>
-		</div>
-
-	</body>
+{% extends "base.html" %}
 	
+{% block content %}
+	{% for entry in entries %}
+		<div class="entry">
+			
+			<p class="entry-subject">
+				<label class="entry-header">Subject: {{entry.subject}} 
+					<a class="entry-id" href="/blog/{{entry.key().id()}}">id = {{entry.key().id()}}
+					</a>
+				</label>
+				<br>
+				
 
-</html>
+			</p>
+			
+			
+			<p class="entry-content">
+				<label class="entry-header">Content:</label>
+				<br>
+				&nbsp; {{entry.content}}</p>
+		</div>
+		<br><br>
+	{% endfor %}
+
+	<div>
+		<h5> queried {{seconds}} seconds ago
+		</h5>
+	</div>
+{% endblock %}

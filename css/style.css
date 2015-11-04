@@ -1,0 +1,56 @@
+body {
+	margin: 0px;
+	padding: 10px;
+	background-color: lavenderblush;
+}
+
+.header {
+	width: 300px;
+	display: block;
+}
+
+.navigation {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	display: inline;
+}
+
+.entry {
+	padding-top: 0px;
+	padding-right: 20px;
+	padding-bottom: 0px;
+	padding-left: 20px;
+	border: 1px solid black;
+	background-color: azure;
+}
+
+.entry-subject {
+	font-size: 20px;
+	padding-bottom: 5px;
+	padding-top: 0px;
+	padding-left: 2px;
+	background-color: lightblue;
+	line-height: 90%;
+}
+
+.entry-header {
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.entry-id {
+	font-size: 14px;
+	float: right;
+	width: 30%;
+}
+
+
+.entry-content {
+	font-size: 14px;
+	padding-left: 2px;
+	background-color: paleturquoise;
+}

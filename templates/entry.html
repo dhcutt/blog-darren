@@ -1,21 +1,20 @@
-<!DOCTYPE = html>
-<html>
-	<head>
-		<title>Darren's Blog</title>
-		<h1>Darren's Blog</h1>
-	</head>
-
-	<body>
-		{{entry.subject}}
-		<br><br>
-		{{entry.content}}
+{% extends "base.html" %}
+{% block content %}
+		<div class="entry">
+			<h4> Post {{entry.key().id()}}
+			<p class="entry-subject">
+				Subject: {{entry.subject}}
+			</p>
+			<p class="entry-content">
+				Content: 
+				<br>
+				&nbsp; {{entry.content}}
+				
+			</p>
+		</div>
 
 		<div>
 			<h5> queried {{seconds}} seconds ago
 			</h5>
 		</div>
-
-	</body>
-	
-
-</html>
+{% endblock %}
