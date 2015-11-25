@@ -142,7 +142,7 @@ class Handler(webapp2.RequestHandler):
 #/
 class MainHandler(Handler):
     def get(self):
-        self.render("home.html")
+        self.render("main.html")
 
 #handler for /blog main blog homepage- lists blog entries
 #/blog

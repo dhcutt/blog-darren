@@ -1,0 +1,55 @@
+#container {
+	width:800px;
+	height:auto;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 11px;
+	margin-bottom: 21px;
+}
+
+#header {
+	height: 150px;
+	background-color: #CCC;
+}
+
+#sidebar {
+	width:150px;
+	height: 300px;
+	background-color: #0C0;
+	float: left;
+}
+
+#mainbody {
+	width:650px;
+	height:auto;
+	background-color: #03C;
+	float: right;
+}
+
+#skills {
+	width:650px;
+	height:auto;
+	background-color: yellow;
+	float:right;
+}
+
+
+#skills li {
+	display:inline;
+	list-style-type:disc;
+}
+
+.project {
+	width:650px;
+	height:200px;
+	background-color:#666;
+	float:right;
+	clear:right;
+}
+
+
+#footer {
+	height: auto;
+	background-color: #CCC;
+	clear:both;
+}
