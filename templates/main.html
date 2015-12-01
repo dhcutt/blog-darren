@@ -4,10 +4,10 @@
 		<meta charset="utf-8">
 		<title>Darren's Web Development</title>
 		<!-- This links to the CSS for google APP engine to load. For it to load outside of app engine, the css folder will need to be moved to the templates folder -->
-		<link href="css/maincss.css" rel="stylesheet" type="text/css">
-		<link href="css/menu.css" rel="stylesheet" type="text/css">
+		<link href="/css/maincss.css" rel="stylesheet" type="text/css">
+		<link href="/css/menu.css" rel="stylesheet" type="text/css">
 		<!-- style sheet for 800px and under layout -->
-		<link href="css/800px.css" rel="stylesheet" type="text/css" media="screen and (max-width: 800px)">
+		<link href="/css/800px.css" rel="stylesheet" type="text/css" media="screen and (max-width: 800px)">
 	</head>
 
 	<body>
@@ -15,25 +15,27 @@
 		<div id="container">
 
 			<div id="header">
+				<h1> Freelance Web Design </h1>
 	
 			</div>
 
 			<div id="menu">
 				<ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Services</a></li>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Contact</a></li>
+					<li><a href="/">Home</a></li>
+					<li><a href="/services">Services</a></li>
+					<li><a href="/blog">Blog</a></li>
+					<li><a href="contact">Contact</a></li>
 				</ul>
 			</div>
 
 			<div id="sidebar">
 				<h4>Jump to:</h4>
+				<p> <br><br><br><br></p>
 
 			</div>
 
 			<div id="mainbody">
-				<h3> Bio: </h3>
+				<h2> Bio: </h2>
 				<p> Hello, and welcome to my web developer page! My name is Darren Honeycutt, and I am a web developer. I am 27 years old and live in Richardson, TX. I build and design web pages and applications using all the best principals and practices to make ensure your page is responsive, fast, easy to navigate, and user friendly. If you would like to have a webpage or application built, or have a potential job offer, please contact me at darren.jhoneycutt@gmail.com to discuss further.
 				</p>
 				<p> Below I will highlight my skills and projects. The source code for the projects can be found on my github if you would like to take a closer look at the details. I have a passion for learning and am willing to expand my knowledge if a project is not already in my skillset. This site is still under construction. 
@@ -41,7 +43,7 @@
 			</div>
 
 			<div id="skills">
-				<h3> Skills: </h3>
+				<h2> Skills: </h2>
 				<p> Languages: 
 					<ul>
 						<li>HTML, </li>
@@ -81,29 +83,51 @@
 
 			</div>
 
-			<div class="project" id="project1">
-				<h3> Blog Project: </h3>
-				<h5> Python web application using google app engine: blog-darren.appspot.com/blog</h5>
-				<h5> User logins, HTML templates, cookies, caching, databases, JSON, and more.</h5>
-				<h5> Source code: github.com/dhcutt/blog-darren class: https://www.udacity.com/course/web-development--cs253</h5>
+			<div id="projectbody">
+				<h2> Projects </h2>
 
-			</div>
+				<div class="project" id="project1">
+					<h3><a href="/blog"> Blog Project </a></h3>
+					<h4> &bull; Python web application running on google app engine</h4>
 
-			<div class="project" id="project2">
-				<h3> JavaScript Resume Project: </h3>
-				<h5> JavaScript Resume</h5>
-				<h5> Resume featuring JavaScript, JQuery, google maps API, and more.</h5>
-				<h5> Source code: github.com/dhcutt/frontend-nanodegree-resume class: https://www.udacity.com/course/javascript-basics--ud804</h5>				
+					<div class="projectpic">
+						<a href="/blog"><img src="/images/blog-darren.PNG"></a>
+					</div>
 
-			</div>
+					<p> User logins, HTML templates, cookies, hashing, caching, databases, API, JSON, and more.</p>
+					<p> The base backend of this project was created using Udacity's class <a href="https://www.udacity.com/course/web-development--cs253"> cs253 </a>. I have extended the contents of that class and added additional backend features. The HTML styling and CSS is all custom created by me as well, none was provided for the project. </p>
+					<h5> <a href="https://github.com/dhcutt/blog-darren">Source Code </a> |
+						<a href="/blog">Visit Site</a>
 
-			<div class="project" id="project3">
-				<h3> HTML5/CSS3 Resume Project: </h3>
-				<h5> HTML/CSS resume</h5>
-				<h5> Responsive resume using bootstrap framework..</h5>
-				<h5> Source code: github.com/dhcutt/Resume-HTML-CSS-Final-Project class: https://www.udacity.com/course/intro-to-html-and-css--ud304</h5>
+					</h5>
 
-			</div>
+				</div>
+
+				<div class="project" id="project2">
+					<h3><a href="http://dhcutt.github.io"> JavaScript Resume Project: </a></h3>
+					<h4> &bull; JavaScript Resume</h4>
+
+					<div class="projectpic">
+						<a href="http://dhcutt.github.io"> <img src="/images/javascript-resume.PNG"></a>
+					</div>
+
+					<p> Resume featuring JavaScript, JQuery, google maps API, and more.</p>
+					<p> This website was created using Udacity's class <a href="https://www.udacity.com/course/javascript-basics--ud804"> ud804 </a>. The HTML and CSS were provided by the course. </p>
+					<h5> <a href="https://github.com/dhcutt/frontend-nanodegree-resume">Source Code</a> | 
+						<a href="http://dhcutt.github.io"> Visit Site</a>
+					</h5>				
+
+				</div>
+
+				<div class="project" id="project3">
+					<h3> HTML5/CSS3 Resume Project: </h3>
+					<h4> HTML/CSS resume</h4>
+					<p> &bull; Responsive resume using bootstrap framework.</p>
+					<p> This website was the final project for Udacity's class <a href="https://www.udacity.com/course/intro-to-html-and-css--ud304"> ud304 </a>. The HTML and CSS were created from scratch to match a mockup. Additional tweaks were then made to improve the site. </p>
+					<h5> <a href="https://github.com/dhcutt/Resume-HTML-CSS-Final-Project">Source code</a> </h5>	
+
+				</div>
+		</div>
 
 
 			<div id="footer">

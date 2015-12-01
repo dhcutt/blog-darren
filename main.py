@@ -144,6 +144,21 @@ class MainHandler(Handler):
     def get(self):
         self.render("main.html")
 
+class ServicesHandler(Handler):
+    def get(self):
+        self.render("services.html")
+
+class ContactHandler(Handler):
+    def get(self):
+        self.render("contact.html")
+
+
+
+
+
+
+        
+
 #handler for /blog main blog homepage- lists blog entries
 #/blog
 class BlogHandler(Handler):
@@ -383,7 +398,10 @@ class FlushHandler(Handler):
     
 #maps url to hadler to user
 app = webapp2.WSGIApplication([
-    ('/', MainHandler,), ('/blog/?', BlogHandler),
+    ('/', MainHandler,),
+    ('/services/?', ServicesHandler),
+    ('/contact/?', ContactHandler),
+    ('/blog/?', BlogHandler),
     ('/blog/newpost/?', PostHandler),
     (r'/blog/(\d*)/?', EntryHandler),
     ('/blog/signup/?', SignHandler),

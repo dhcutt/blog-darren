@@ -5,31 +5,45 @@
 	margin-right: auto;
 	margin-top: 11px;
 	margin-bottom: 21px;
+	background-color: #8B864E;
 }
 
 #header {
-	height: 150px;
-	background-color: #CCC;
+	height: 80px;
+	text-align: center;
+}
+
+#header h1 {
+	padding-top: 20px;
 }
 
 #sidebar {
 	width:150px;
-	height: 300px;
-	background-color: #0C0;
+	height: auto;
+	background-color: #8B5742;
 	float: left;
+	position: fixed;
+}
+
+h2 {
+	padding-left: 4px;
+}
+
+p {
+	padding-left:10px;
 }
 
 #mainbody {
 	width:650px;
 	height:auto;
-	background-color: #03C;
+	background-color: NavajoWhite;
 	float: right;
 }
 
 #skills {
 	width:650px;
 	height:auto;
-	background-color: yellow;
+	background-color: #CDC0B0;
 	float:right;
 }
 
@@ -39,17 +53,49 @@
 	list-style-type:disc;
 }
 
-.project {
+#projectbody {
 	width:650px;
-	height:200px;
-	background-color:#666;
+	height:auto;
 	float:right;
 	clear:right;
+	background-color:#C1FFC1;
+}
+
+.project {
+	height:auto;
+	width:600px;
+	float:right;
+	clear:right;
+	background-color:none;
+	margin-right:10px;
+	margin-bottom:10px;
+	padding-left:5px;
+	border-style:solid;
+	border-width:2px;
+
+}
+
+.project a {
+	text-decoration: none;
+}
+
+.project h3 {
+	margin-top:0;
+	text-align: center;
+}
+
+.projectpic {
+	width:inherit;
+}
+
+.projectpic img {
+	width:590px;
+	margin:5px;
 }
 
 
 #footer {
 	height: auto;
-	background-color: #CCC;
+	background-color: #8B5742;
 	clear:both;
 }
