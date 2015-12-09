@@ -3,28 +3,29 @@
 }
 
 #sidebar {
-	width:100px;
+	display:none;
+	width:0px;
 }
 
 #mainbody {
-	width:200px;
+	width:300px;
 }
 
 #skills {
-	width:200px;
+	width:300px;
 }
 
 #projectbody {
-	width:200px;
+	width:300px;
 }
 
 .project {
-	width:180px;
+	width:280px;
 	height:auto;
 	margin-right:5px;
 }
 
 .projectpic img {
-	width:170px;
+	width:270px;
 	margin:5px;
 }
