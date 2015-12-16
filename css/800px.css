@@ -1,5 +1,15 @@
+.col-2 {
+	width:0%;
+}
+
+.col-10 {
+	width:100%;
+}
+
+
+
 #container {
-	width:300px;
+/*	width:300px;*/
 }
 
 #sidebar {
@@ -8,19 +18,19 @@
 }
 
 #mainbody {
-	width:300px;
+/*	width:300px;*/
 }
 
 #skills {
-	width:300px;
+/*	width:300px;*/
 }
 
 #projectbody {
-	width:300px;
+/*	width:300px;*/
 }
 
 .project {
-	width:280px;
+/*	width:280px;*/
 	height:auto;
 	margin-right:5px;
 }
@@ -28,4 +38,7 @@
 .projectpic img {
 	width:270px;
 	margin:5px;
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
 }

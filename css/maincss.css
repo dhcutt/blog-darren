@@ -1,3 +1,55 @@
+* {
+	box-sizing: border-box;
+}
+
+.col-1 {
+	width: 8.33%;
+}
+.col-2 {
+	width:16.66%;
+}
+.col-3 {
+	width:25%;
+}
+.col-4 {
+	width:33.33%;
+}
+.col-5 {
+	width:41.66%;
+}
+.col-6 {
+	width:50%;
+}
+.col-7 {
+	width:58.33%;
+}
+.col-8 {
+	width:66.66%;
+}
+.col-9 {
+	width:75%;
+}
+.col-10 {
+	width:83.33%;
+}
+.col-11 {
+	width:91.66%;
+}
+.col-12 {
+	width:100%;
+}
+
+[class*="col-"] {
+	float:left;
+}
+
+.row:after {
+	content: " ";
+	clear:both;
+	display:block;
+}
+
+
 body {
 	background-color: silver;
 }
@@ -32,7 +84,8 @@ li {
 }
 
 #container {
-	width:800px;
+/*  width:800px;*/
+	max-width:1200px;
 	height:auto;
 	margin-left: auto;
 	margin-right: auto;
@@ -52,12 +105,12 @@ li {
 }
 
 #sidebar {
-	width:150px;
+/*	width:150px;*/
 	height: auto;
 /*	background-color: #8B5742;*/
 	background-color:#CDC0B0;
 	float: left;
-	position: fixed;
+	position: relative;
 }
 
 #sidebar a {
@@ -75,10 +128,10 @@ li {
 
 
 #mainbody {
-	width:650px;
+/*	width:650px;*/
 	height:auto;
 	background-color: NavajoWhite;
-	float: right;
+/*	float: right;*/
 }
 
 #headshot {
@@ -99,10 +152,12 @@ li {
 }
 
 #skills {
-	width:650px;
+/*	width:650px;*/
 	height:auto;
 	background-color: #CDC0B0;
 	float:right;
+	font-family: 'Abel', Tahoma, sans-serif;
+	
 }
 
 
@@ -111,24 +166,33 @@ li {
 	list-style-type:disc;
 }
 
+.skillsbox {
+	padding-left:10px;
+	margin-top: 8px;
+	margin-bottom: 15px;
+	font-family: 'Abel', Tahoma, sans-serif;
+}
+
 #projectbody {
-	width:650px;
+/*	width:650px;*/
 	height:auto;
 	float:right;
-	clear:right;
+/*	clear:right;*/
 	background-color: NavajoWhite;
 /*	background-color:#C1FFC1;*/
 }
 
 .project {
 	height:auto;
-	width:600px;
-	float:right;
-	clear:right;
+/*	width:600px;*/
+/*	float:right;*/
+/*	clear:right;*/
 	background-color:none;
 	margin-right:10px;
+	margin-left:10px;
 	margin-bottom:10px;
 	padding-left:5px;
+	padding-right:5px;
 	border-style:solid;
 	border-width:2px;
 
@@ -150,11 +214,13 @@ li {
 .projectpic img {
 	width:590px;
 	margin:5px;
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 
 #footer {
 	height: auto;
 	background-color: #CDC0B0;
-	clear:both;
 }

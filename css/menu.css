@@ -1,3 +1,7 @@
+* {
+	box-sizing: border-box;
+}
+
 #menu {
 	height:auto;
 	min-height:60px;
@@ -15,7 +19,7 @@
 #menu li {
 	list-style-type:none;
 	display:inline-block;
-	width:150px;
+	width:24%;
 	height:auto;
 	min-height:60px;
 	text-align: center;
